@@ -1,0 +1,42 @@
+.main-section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .portfolio-container {
+
+        .greeting-message-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin-bottom: 0;
+            color: white;
+        }
+          
+        h1, h2 {
+            position: relative;
+            animation-name: topFadeOut;
+            animation-duration: 2s;
+        }
+    }
+}
+
+@keyframes topFadeOut {
+    0% {
+        top: -30px;
+        opacity: 0;
+    }
+
+    50% {
+        top: 0px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
