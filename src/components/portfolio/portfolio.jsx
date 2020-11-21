@@ -1,13 +1,17 @@
 import React from 'react';
+import Options from '../options/options'
 import './css/portfolio.scss'
 
 export default function Portfolio() {
     return (
         <section className="main-section">
-            <div class="portfolio-container">
-                <div class="greeting-message-container">
-                    <h1 class="title is-1">Hi, I'm Danielle</h1>
-                    <h2 class="sub-title">Software Developer</h2>
+            <div className="portfolio-container">
+                <div className="greeting-message-container">
+                    <h1 className="title is-1">Hi, I'm Danielle</h1>
+                    <h2 className="sub-title">Software Developer</h2>
+                </div>
+                <div className="options-container">
+                    <Options/>
                 </div>
             </div>
         </section>

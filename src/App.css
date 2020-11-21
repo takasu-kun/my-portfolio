@@ -1,10 +1,28 @@
 .background {
     height: 100%;
     width: 100%;
-    background: url('./assets/main-bg.jpg');
+    background: linear-gradient(to bottom, rgba(7, 1, 2, 0.12), rgba(165, 255, 165, 0.13)), url('./assets/main-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+
+@keyframes topFadeOut {
+    0% {
+        top: -30px;
+        opacity: 0;
+    }
+
+    50% {
+        top: 0px;
+        opacity: 1;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
 }
 
 /* Background Blur using backdrop-filter */
